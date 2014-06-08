@@ -1,0 +1,4 @@
+
+
+i  <C-N>        @<C-G>u<Esc>:call <SNR>86_SparkupNext()<CR>
+i  <C-N>       * <C-N>

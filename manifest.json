@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+
+    "name": "PFTV",
+    "description": "Some tweaks to Project Free TV",
+    "version": "0.2",
+
+    "permissions": [
+        "https://free-tv-video-online.me/",
+        "http://free-tv-video-online.me/"
+    ],
+
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+
+    "content_scripts": [{
+        "matches": ["http://*/*"],
+        "css": ["granted.css"],
+        "js": ["jquery-2.0.0.js", "granted.js"]
+    }],
+
+    "permissions": [
+        "tabs", "http://*/*", "history", "notifications"
+    ],
+
+    "background": {
+        "scripts": ["jquery-2.0.0.js", "granted_background.js"]
+    }
+}
