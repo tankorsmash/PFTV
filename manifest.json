@@ -3,7 +3,7 @@
 
     "name": "PFTV",
     "description": "Some tweaks to Project Free TV",
-    "version": "0.2",
+    "version": "0.2.2",
 
     "permissions": [
         "https://free-tv-video-online.me/",
@@ -11,7 +11,8 @@
     ],
 
     "browser_action": {
-        "default_popup": "popup.html"
+        "default_popup": "popup.html",
+        "default_icon" : "icon48.png"
     },
 
     "content_scripts": [{
@@ -26,5 +27,9 @@
 
     "background": {
         "scripts": ["jquery-2.0.0.js", "granted_background.js"]
-    }
+    },
+
+    "icons": { "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png" }
 }
